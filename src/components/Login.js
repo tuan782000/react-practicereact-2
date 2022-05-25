@@ -60,7 +60,7 @@ const Login = () => {
                     onChange={(event) => setPassword(event.target.value)}
                     onKeyDown={(event)=> handlePressEnter(event)}
                 />
-                <i className={isShowPassword === true ? "fa-solid fa-eye":"fa-solid fa-eye-slash"}
+                <i className={isShowPassword === true ? "fas fa-eye":"fas fa-eye-slash"}
                     onClick={() => setIsShowPassword(!isShowPassword)}>
 
                 </i>

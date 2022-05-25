@@ -172,7 +172,7 @@ const TableUsers = (props) => {
             <span><b>List Users:</b></span>
             <div className='group-btns mt-sm-0 mt-2'>
                 <label htmlFor="test" className='btn btn-warning'>
-                    <i className='fa-solid fa-file-import'></i> Import
+                    <i className='fas fa-file-import'></i> Import
                 </label>
                 <input 
                     id="test" type="file" hidden
@@ -184,9 +184,9 @@ const TableUsers = (props) => {
                     data={dataExport}
                     asyncOnClick={true}
                     onClick={getUsersExport}
-                ><i className='fa-solid fa-file-arrow-down'></i> Export</CSVLink>
+                ><i className='fas fa-file-download'></i> Export</CSVLink>
                 <button className='btn btn-success' onClick={() => setIsShowModalAddNew(true)}>
-                    <i className='fa-solid fa-circle-plus'></i> Add new</button>
+                    <i className='fas fa-plus'></i> Add new</button>
             </div>
         </div>
         <div className='col-12 col-sm-4 my-3'>
@@ -205,10 +205,10 @@ const TableUsers = (props) => {
                             <span>ID</span>
                             <span>
                                 <i
-                                    className='fa-solid fa-arrow-down-long'
+                                    className='fas fa-long-arrow-alt-down'
                                     onClick={() => handleSort("desc", "id")}
                                 ></i>
-                                <i className='fa-solid fa-arrow-up-long'
+                                <i className='fas fa-long-arrow-alt-up'
                                     onClick={() => handleSort("asc", "id")}
                                 ></i>
                             </span>
@@ -221,10 +221,10 @@ const TableUsers = (props) => {
                             <span>First Name</span>
                             <span>
                                 <i
-                                    className='fa-solid fa-arrow-down-long'
+                                    className='fas fa-long-arrow-alt-down'
                                     onClick={() => handleSort("desc", "first_name")}
                                 ></i>
-                                <i className='fa-solid fa-arrow-up-long'
+                                <i className='fas fa-long-arrow-alt-up'
                                     onClick={() => handleSort("asc", "first_name")}
                                 ></i>
                             </span>
